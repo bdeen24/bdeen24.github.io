@@ -1,0 +1,115 @@
+=======
+Lab 1
+=======
+
+Welcome to the world of web development!  In this lab, you will learn how to write HTML and CSS code and create a webpage that is all about **you**. You'll write your code using Visual Studio Code. 
+
+How are websites developed and displayed?
+------------------------------------------
+Web browsers are software applications used to display websites.  Examples of popular web browsers are Internet Explorer and Firefox.  Web browsers perform many tasks, but the primary job of a web broswer is to render web pages.  Rendering a web page is done by interpreting the HTML, CSS and JavaScript code written for a web page, and displaying it to the end user.  
+
+.. image:: ./_static/images/example_html.png
+    :alt: HTML code for a simple web page.
+    
+.. image:: ./_static/images/example_output.png
+    :alt: The resulting web page displayed in the browser.
+    
+Web browsers are able to understand code written in HTML, CSS and JavaScript.  Each of these languages has a different purpose in the development of web pages. 
+
+**HTML** stands for **H**\yper\ **T**\ext **M**\arkup **L**\anguage and is used to define the **contents** and **structure** of a web page.  HTML allows you to specify the elements that a web page will contain, such as headings, paragraphs, images and links.  HTML is also used to define the structure of these elements.  For example, in the image above, the body of the HTML is specifying a heading, followed by a paragraph, which contains a link.
+
+**CSS** stands for **C**\ ascading **S**\tyle **S**\heet and is used to control the **style** and **appearance** of a web page.  CSS allows a programmer to do things such as set the background color of a page or a portion of a page, set font colors and sizes, and modify the appearance and layout of the webpage.  
+
+**JavaScript** is used to add behavior to a webpage.  Without JavaScript, a web page is typically not interactive or dynamic.  If a user clicks a button or enters information that the page needs to respond to, the entire webpage would typically need to be reloaded.  With JavaScript, these things can be done *dynamically*, which makes the webpage more responsive to user interaction.
+
+
+
+Review
+-------
+
+Let's review the basics of web development before diving into some code.
+
+.. mchoice:: MC1_1
+    :answer_a: JavaScript
+    :answer_b: HTML
+    :answer_c: C#
+    :answer_d: Java
+    :correct: b 
+    :feedback_b: Yes, we write HTML code using tags to specify the elements we'd like to appear on the page
+    :feedback_a: Not quite. JavaScript is used for another purpopse in web development
+    :feedback_c: Not exactly. C# isn't used to structure web pages.  It's a great language, though!
+    :feedback_d: Not exactly. Java isn't used to structure web pages.  It's a great language, though!
+
+    Which programming language do we use to define the contents and structure of a web page?
+
+.. mchoice:: MC1_2
+    :answer_a: CSS
+    :answer_b: HTML
+    :answer_c: JavaScript
+    :answer_d: Python
+    :correct: a 
+    :feedback_a: Correct! We create **C**\ ascading **S**\tyle **S**\heets to modify the style of elements on our page, such as changing font color or the background color for the page.
+    :feedback_b: Not quite. Remember that HTML is used for **defining** the elements that will be on a webpage, such as a paragraph or a list.  HTML is not used to style this elements.
+    :feedback_c: Not quite. JavaScript is used for another purpopse in web development
+    :feedback_d: Not exactly. We'll use Python for the *backend* of our web sites.  It's not used to create or style our webpages.
+
+    Which programming language is used to **style** webpages?
+
+.. mchoice:: MC1_3
+    :answer_a: JavaScript
+    :answer_b: HTML
+    :answer_c: Java
+    :answer_d: Python
+    :correct: a
+    :feedback_a: Correct! You can write JavaScript code to allow you web page to **respond** to user input and modify the contents of your web page!
+    :feedback_b: Not quite. Remember that HTML is used for **defining** the elements that will be on a webpage, such as a paragraph or a list.  HTML is not used to style this elements.
+    :feedback_c: Not exactly. Java isn't used to structure web pages.  It's a great language, though!
+    :feedback_d: Not exactly. We'll use Python for the *backend* of our web sites.  It's not used to create or style our webpages.
+
+    Which programming language is used to make webpages interactie and responsive?
+
+    
+.. dragndrop:: DD1_4
+    :feedback: Not exactly.  Give it another try!
+    :match_1: JavaScript|||This language is used to define behavior
+    :match_2: HTML|||This language is used to define the contents
+    :match_3: CSS|||This language is used to style webpages
+
+    Drag each language to the purpose it has for developing web pages.
+
+
+
+
+
+Using Visual Studio Code 
+-------------------------
+
+Visual Studio Code is the code editor we will be using in this course.  A **code editor** is a tool that makes it easier for programmers to write and edit code.  Although you could write code in a simple program like NotePad, code editors understand the language you're writing code in and can do things like highlight syntax errors, make it easier for you to format your code, and much more.
+
+Let's practice writing code in Visual Studio Code and viewing the resulting web page in the browser. 
+
+We'll start with a webpage that displays the text "Hello, world!".  Writing code to display "Hello, world" is the first step torward becoming a programmer!
+
+1. Open 'Visual Studio Code' on your computer.
+2. Once you have the application open, an empty file should be open. Let's start by saving this file with an appropriate name.
+    - File > `Save as`
+    - Navigate to the folder that your teacher has specified for you to save your files
+    - Change the file name to `MyWebpage.html` and press **Save**
+3. Next, we'll write some HTML code to display "Hello, world!" on a webpage.
+    - Type the following code into your empty HTML file:::
+        <html>
+            <head>
+                <title>My webpage</title>
+            <head>
+
+            <body>
+                <h1>Hello, World!</h1>
+            </body>
+        </html>
+    - **Save** your file
+4. Now that you've written your code and saved your file, you can use your web browser to view the webpage you've created. There are 2 ways to open your webpage:
+    1. Open your web browser.  In the address bar, type in the path to your saved file and press enter. 
+        -Just as you type in the address of websites that you visit, such as http://www.facebook.com, you can similarly type the address, or location, of the file on your own computer, and the browser will locate it and render it just the same.
+    2. Navigate to your file on your computer and double-click on the file to open it. This should open your webpage using your default browser.
+        -If this does not work, you can manually right-click on your file, and select `Open with`> `<your favorite browser`
+
